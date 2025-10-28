@@ -1,0 +1,129 @@
+body {
+  background-color: #f4e9da;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+
+::selection {
+  background-color: #ffca7a;
+  color: #000;
+}
+
+.container {
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.title {
+  font-family: "Brush Script MT", cursive;
+  font-size: 56px;
+  color: #3c2a10;
+  display: inline-block;
+  background: linear-gradient(to top, #ffca7a 30%, transparent 30%);
+  padding: 0 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.title:hover {
+  background: linear-gradient(to top, #ffb347 60%, transparent 40%);
+  transform: scale(1.0);
+}
+
+.dashed {
+  border: none;
+  border-top: 2px dashed #7d6c55;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+
+.subtitle {
+  color: #4a7a1c;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+
+ form {
+  width: 100%;
+  max-width: none;
+  background-color: #fff;
+  box-shadow: none;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: transparent;
+  text-align: left;
+
+ }
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form-control.is-invalid:focus, .was-validated .form-control:invalid:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 .25rem rgba(234, 38, 57, 0.25);
+}
+button {
+  display: block;
+  width: 13%;
+  display: block;
+  margin: 0 auto;
+  background-color: #b64b2f;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+} 
+
+button:hover {
+  background-color: #a23f27;
+}
+
+
+table {
+  width: 1150px;
+  margin: auto;
+  border-collapse: separate;
+  border-spacing: 15px 0;
+  margin-top: 20px;
+  font-size: 15px;
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+}
+
+th {
+  font-weight: bold;
+}
+
+td {
+  border-bottom: 1px solid #ccc;
+ padding:8px;
+}
+
+
+
+
