@@ -17,7 +17,6 @@ body {
   margin: 40px auto;
   text-align: center;
 }
-
 .title {
   font-family: "Brush Script MT", cursive;
   font-size: 56px;
@@ -39,18 +38,13 @@ body {
   border-top: 2px dashed #7d6c55;
   margin: 20px auto;
   width: 100%;
-  max-width: 100%;
 }
-
-
 .subtitle {
   color: #4a7a1c;
   font-size: 20px;
   text-align: center;
   margin-bottom: 25px;
 }
-
-
  form {
   width: 100%;
   max-width: none;
@@ -69,7 +63,6 @@ label {
   margin-bottom: 6px;
   text-align: left;
 }
-
 input {
   width: 100%;
   margin: auto;
@@ -84,46 +77,120 @@ input {
     border-color: #dc3545;
     box-shadow: 0 0 0 .25rem rgba(234, 38, 57, 0.25);
 }
-button {
-  display: block;
-  width: 13%;
-  display: block;
-  margin: 0 auto;
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.submit-btn {
   background-color: #b64b2f;
   color: white;
-  padding: 12px;
+  padding: 12px 25px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  display: block;
+  margin: 10px auto;
   font-size: 16px;
-} 
-
-button:hover {
-  background-color: #a23f27;
 }
 
+.submit-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.error-msg {
+  color: #d32f2f;
+  font-size: 13px;
+  margin-top: 3px;
+  display: block;
+}
+
+input.invalid {
+  border-color: #f44336;
+}
+
+input.valid {
+  border-color: #4caf50;
+}
 
 table {
-  width: 1150px;
-  margin: auto;
-  border-collapse: separate;
-  border-spacing: 15px 0;
+  width: 100%;
+  border-collapse: collapse;
   margin-top: 20px;
-  font-size: 15px;
-  text-align: center;
   background-color: white;
-  padding: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 10px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
 }
 
 th {
-  font-weight: bold;
+  background-color: #fff;
 }
 
-td {
-  border-bottom: 1px solid #ccc;
- padding:8px;
+.visit-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
 }
 
+.visit-btn:hover {
+  background-color: #45a049;
+}
 
+.edit-btn {
+  background-color: #ffca28;
+  color: #333;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin-right: 5px;
+  cursor: pointer;
+}
 
+.edit-btn:hover {
+  background-color: #ffb300;
+}
 
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+input.valid {
+  border: 2px solid #4caf50;
+  background-color: transparent;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/845/845646.png');
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 18px;
+  box-shadow: none;
+  transition: border-color 0.2s ease;
+}
+
+input.invalid {
+  border: 2px solid #f44336;
+  background-color: transparent;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/463/463612.png');
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 18px;
+  box-shadow: none;
+  transition: border-color 0.2s ease;
+}
